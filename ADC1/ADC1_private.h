@@ -111,10 +111,15 @@ typedef struct{
 
 /* JSQR */
 #define JSQ1		0		
-#define JSQ1		5		
+#define JSQ2		5
 #define JSQ3		10		
 #define JSQ4		15		
 #define JL			20
+
+/* Private functions prototypes */
+
+
+
 
 
 #endif 

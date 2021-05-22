@@ -45,11 +45,11 @@
 void ADC1_voidInit(void);
 
 /******************************************************************************
-* Description : setting ADC1 threshold of analog watchdog
-* Parameters  : low threshold(u16), high threshold(u16)
+* Description : Writing 1 to ADON bit to start conversion
+* Parameters  : void
 * Return type : void
-******************************************************************************/																
-void ADC1_voidSetThresholds(u16 Copy_u16LowThreshold, u16 Copy_u16HighThreshold);
+******************************************************************************/
+void ADC1_voidStartConversion(void);
 
 /******************************************************************************
 * Description : getting ADC1 conversion val
