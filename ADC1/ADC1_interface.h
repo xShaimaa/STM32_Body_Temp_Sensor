@@ -45,27 +45,12 @@
 void ADC1_voidInit(void);
 
 /******************************************************************************
-* Description : Writing 1 to ADON bit to start conversion
-* Parameters  : void
-* Return type : void
-******************************************************************************/
-void ADC1_voidStartConversion(void);
-
-/******************************************************************************
 * Description : getting ADC1 conversion val
 * Parameters  : void
 * Return type : low 16 bit of DR register (u16)
 ******************************************************************************/
 u16 ADC1_u16GetRegularVal(void);
 
-
-/*
-void ADC1_SetAWDCallBack(void (*CallBack) (void));
-void ADC1_SetEOCCallBack(void (*CallBack) (void));
-
-void (*ADC1_voidAWDCallBack)(void);
-void (*ADC1_voidEOCCallBack)(void);
-*/
 
 #endif 
 
