@@ -11,7 +11,7 @@
 /* public functions prototypes */
 
 /******************************************************************************
-* Description : initializing the tempreture sensor
+* Description : initializing ADC1 and tempreture sensor pin
 * Parameters  : void
 * Return type : void
 ******************************************************************************/
@@ -21,9 +21,9 @@ void TempSensor_voidInit(void);
 /******************************************************************************
 * Description : calculating the sensor's reading
 * Parameters  : void
-* Return type : reading (u8)
+* Return type : celcuis temp reading (f32)
 ******************************************************************************/
-u8 TempSensor_u8TempRead(void);
+f32 TempSensor_f32TempRead(void);
 
 /******************************************************************************
 * Description : calculating the sensor's reading average
