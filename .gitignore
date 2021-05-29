@@ -1,0 +1,6 @@
+.sittings/
+Debug/
+Idscripts/
+system/
+*.cproject
+*.project
