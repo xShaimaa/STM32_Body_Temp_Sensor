@@ -3,8 +3,6 @@
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
-#include <math.h>
-
 /* MCAL includes */
 #include "RCC_interface.h"
 #include "DIO_interface.h"
@@ -37,17 +35,6 @@ void main(void)
 	{
 		val = TempSensor_f32TempRead();
 
-		/* calculating R using voltage devidor */
-		val = (65535 / val) - 1;      						/* (65535/ADC - 1) */
-		val = SERIESRESISTOR / val;  						/* 10K / (65535/ADC - 1) */
-
-		/* calculating T */
-		celsius = val / THERMISTORNOMINAL;     				/* (R/Ro) */
-		//celsius = log(celsius);                  			/* ln(R/Ro) */
-		celsius /= BCOEFFICIENT;                   			/* 1/B * ln(R/Ro) */
-		celsius += 1.0 / (TEMPERATURENOMINAL + 273.15); 	/* + (1/To) */
-		celsius = 1.0 / celsius;                 			/* Inverting the value */
-		celsius -= 273.15;                         			/* convert K temp to C */
 	}
 }
 
